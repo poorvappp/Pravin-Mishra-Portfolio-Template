@@ -602,7 +602,19 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
+        <p> Pravin Mishra Portfolio v1.0 — Deployed on <span id="DeployDate">05 Feb 2026</span>— By Poorva Tumbde </p>
       </div>
+      <script>
+         document.addEventListener('DOMContentLoaded', function () {
+         const today = new Date();
+         const formattedDate = today.toLocaleDateString('en-GB', {
+         day: '2-digit',
+         month: 'short',
+         year: 'numeric'
+    });
+    document.getElementById('DeployDate').textContent = formattedDate;
+  });
+</script>
 
     </div>
   </footer>
