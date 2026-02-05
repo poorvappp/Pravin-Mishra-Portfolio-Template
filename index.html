@@ -600,8 +600,9 @@
 
       <!-- Bottom -->
       <div class="footer-bottom">
-        <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
-        <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
+        
+        <p>.<span id="year"></span> by <span style="font-size: 20px;"> Pravin Mishra </span>. All rights reserved.</p>
+        <p> Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
         <p> Pravin Mishra Portfolio v1.0 — Deployed on <span id="DeployDate">05 Feb 2026</span>— By Poorva Tumbde </p>
       </div>
       <script>
@@ -620,6 +621,18 @@
   </footer>
 
 
+<script>
+  function logViewport() {
+    console.log(
+      window.innerWidth <= 768
+        ? '📱 Mobile View'
+        : '🖥 Desktop View'
+    );
+  }
+
+  window.addEventListener('resize', logViewport);
+  logViewport();
+</script>
 
 </body>
 
